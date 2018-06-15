@@ -1,0 +1,21 @@
+﻿
+
+
+.menuItem:focus {
+    color: #FFF!important;
+    background-Color: #388E3C
+}
+.menuItem .primary, .menuItem .icon {
+    color: #FFFFFF
+}
+
+
+.menuItem:focus {
+    background-Color: #388E3C;
+    color: #ffffff;
+}
+
+
+.MuiDialog-paperFullScreen-602 {
+    background-color: #2E7D32;
+}

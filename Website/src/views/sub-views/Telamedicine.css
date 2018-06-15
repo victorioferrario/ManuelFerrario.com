@@ -1,0 +1,212 @@
+/* body,
+html {
+    text-size-adjust: 100%;
+    color: #212121;
+    -webkit-font-smoothing: antialiased;
+    font: 400 16px/24px Roboto, sans-serif;
+} */
+
+section.telemed h1 {
+    color: #424242;
+    font-size: 48px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    margin-bottom: 1px;
+    transition: all 200ms ease-out
+}
+
+section.telemed h4 {
+    margin-top: 1px;
+    color: #039be5;
+    font-size: 24px;
+    margin: 0 0 24px 0;
+    font-weight: 400;
+    line-height: 28px;
+    color: #4285f4;
+    transition: all 300ms ease-out
+}
+
+.overview-exception {
+    padding-top: 1px;
+    transition: all 300ms ease-out
+}
+
+section.telemed header {
+    padding: 15px;
+    background-color: #ffffff !important;
+}
+
+section.telemed header article {
+    margin: auto;
+    padding: 15px;
+    margin-top: -15px;
+}
+
+section.telemed .container {
+    background: #f7f7f7 !important;
+    width: 100vw;
+}
+
+
+/*		background: #4285f4 16px 50% no-repeat;*/
+
+section.telemed main {
+    padding: 15px;
+}
+
+section.telemed main {
+    padding: 15px;
+}
+
+section.telemed .title {
+    color: #424242;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+section.telemed .title-2 {
+    color: #424242;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+section.telemed .sub-title {
+    color: #424242;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.fix-text {
+    padding-right: 24px;
+}
+
+section.telemed .flex-card-container {
+    flex-wrap: wrap;
+    margin-bottom: -24px;
+    margin-right: -24px;
+}
+
+section.telemed .flex-card-container {
+    clear: both;
+    display: flex;
+}
+
+section.telemed .flex-card {
+    flex: 1;
+    margin-bottom: 0;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+section.telemed .flex-card,
+.cross-3 .flex-card {
+    min-width: 40%;
+}
+
+.docs-cards .flex-card .card-content,
+.partner-cards .flex-card .card-content,
+.image-top-cards .flex-card .card-content {
+    flex: 1;
+}
+
+.flex-card .card-content {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 32px 24px 28px 24px;
+}
+
+.image-top-cards .flex-card .img-container {
+    margin-top: 0;
+    margin-bottom: 2px;
+    float: left;
+}
+
+.flex-card .title {
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.section .title {
+    color: #424242;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.flex-card .desc {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.section .desc {
+    color: #747474;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+.img-text {
+    padding-left: 15px;
+}
+
+@media only screen and (max-width: 650px) {
+    section.telemed h1 {
+        color: #424242;
+        font-size: 28px;
+        line-height: 1.2em;
+        margin-bottom: 20px;
+        margin-bottom: 1px;
+    }
+    section.telemed h4 {
+        color: #039be5;
+        font-size: 14px;
+        margin: 0 0 24px 0;
+        font-weight: 400;
+        line-height: 28px;
+        color: #4285f4;
+    }
+    .overview-exception {
+        margin-top: -40px;
+        padding-top: 1px !important;
+    }
+}
+
+ol.portal {}
+
+ol.portal>li.site-label {
+    list-style-type: none;
+}
+
+ol.portal>li.site-label>span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4285f4 !important;
+    font-weight: 500 !important;
+}
+
+ol.portal li ul {
+    list-style-type: circle;
+}
+
+ol.portal li ol {
+    /*list-style-type: lower-alpha;*/
+}
+
+ol.portal li ol>li>ol {
+    list-style-type: lower-alpha;
+}
+
+ol.over-ride {
+    list-style-type: lower-roman !important;
+}
+
+ol.portal li ol {
+    /*list-style-type:upper-roman;*/
+}
+
+ol.portal ol {
+    /*list-style-type: upper-alpha;*/
+}
+
+span.site-label {}

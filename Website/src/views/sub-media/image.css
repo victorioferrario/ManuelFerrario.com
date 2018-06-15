@@ -1,0 +1,128 @@
+﻿.responsive {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+section.sitmaps header {
+    padding: 15px;
+}
+
+section.sitmaps header article {
+    margin: auto;
+    padding: 15px;
+    margin-top: -15px;
+}
+
+section.sitmaps .container {
+    background: #f7f7f7 !important;
+    width: 100vw;
+}
+
+
+/*		background: #4285f4 16px 50% no-repeat;*/
+
+section.sitmaps main {
+    padding: 15px;
+}
+
+section.sitmaps main {
+    padding: 15px;
+}
+
+section.sitmaps .title {
+    color: #424242;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.card {
+    max-width: 500px;
+    min-width: 200px;
+}
+
+.media {
+    height: 150;
+    padding-top: 33.25%;
+}
+
+.cardbigger {
+    /* max-width: 860px;
+    min-width: 200px;*/
+}
+
+.mediabigger {
+    height: 0;
+    padding-top: 33.25%;
+}
+
+section.sitmaps h1 {
+    color: #424242;
+    font-size: 48px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+    margin-bottom: 1px;
+    transition: all 200ms ease-out
+}
+
+section.sitmaps h4 {
+    margin-top: 1px;
+    color: #039be5;
+    font-size: 24px;
+    margin: 0 0 24px 0;
+    font-weight: 400;
+    line-height: 28px;
+    color: #4285f4;
+    transition: all 300ms ease-out
+}
+
+section.sitmaps .title-2 {
+    color: #424242;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+section.sitmaps .sub-title {
+    color: #424242;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.overview-exception {
+    padding-top: 1px;
+    transition: all 300ms ease-out
+}
+
+section.sitmaps header {
+    padding: 15px;
+}
+
+section.sitmaps header article {
+    margin: auto;
+    padding: 15px;
+    margin-top: -15px;
+}
+
+@media only screen and (max-width: 650px) {
+    section.sitmaps h1 {
+        color: #424242;
+        font-size: 28px;
+        line-height: 1.2em;
+        margin-bottom: 20px;
+        margin-bottom: 1px;
+    }
+    section.sitmaps h4 {
+        color: #039be5;
+        font-size: 14px;
+        margin: 0 0 24px 0;
+        font-weight: 400;
+        line-height: 28px;
+        color: #4285f4;
+    }
+    .overview-exception {
+        margin-top: -40px;
+        padding-top: 1px !important;
+    }
+}

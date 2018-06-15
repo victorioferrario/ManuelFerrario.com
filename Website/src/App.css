@@ -1,0 +1,245 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.github-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.drawer-list {
+    width: 280px;
+}
+
+.loading-component {
+    margin-top: 25px;
+}
+
+.brand-color {
+    color: #26C9FF!important;
+}
+
+.app-content {
+    border: solid 0 #ff0000;
+    /* background: #47494B; */
+    font-size: 18px;
+    width: 100vw;
+    margin: auto;
+    margin-top: 52px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 15px;
+    bottom: 0px;
+}
+
+@media (min-width: 600px) {
+    .app-content {
+        top: 10px;
+    }
+}
+
+.app-page-header {
+    background-color: #388E3C;
+    margin-top: -5px;
+    margin-left: 0;
+    width: 100vw;
+    height: 150px;
+}
+
+.app-page-footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: #388E3C;
+    margin-left: 0;
+    width: 100vw;
+    height: 50px;
+}
+
+.app-page-loader {
+    background-color: #388E3C;
+    margin-top: -20px;
+    margin-left: 0;
+    width: 100vw;
+    height: 155px;
+    padding: 55px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.app-page-title {
+    color: #FFFFFF;
+    margin: auto;
+    width: 100vw;
+    font-size: 28px;
+    padding: 55px;
+    padding-top: 25px;
+    height: 150px;
+}
+
+.app-page-content {
+    margin: auto;
+    width: 100vw;
+    font-size: 18px;
+    padding: 55px;
+    padding-top: 35px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.app-page-content p {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.bullet-header {
+    /* font-family: 'Rubik', sans-serif; */
+    /* font-family: 'Hind', sans-serif; */
+    /* font-family: 'Heebo', sans-serif; */
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+.position-title {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    color: #2E7D32;
+    line-height: 20px;
+}
+
+.position-header {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    display: block;
+    line-height: 30px;
+}
+
+.position-date {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    display: block;
+    color: #424242!important;
+}
+
+.section-header {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: #607D8B;
+    font-size: 24px;
+}
+
+.experience-item {}
+
+.experience-item-sub {
+    border-top: solid 1px #ccc;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 75px;
+    right: 55px;
+}
+
+h3 {
+    color: #FFF
+}
+
+.nested-list-item {
+    padding-left: 45px!important;
+}
+
+.menuItem:focus {
+    background: #2196f3;
+    color: #fff;
+}
+
+.app-bar-shadow-extension {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 2s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .app-content {
+        margin-top: 40px;
+    }
+    .app-page-content {
+        padding: 25px;
+    }
+    .app-page-content p {
+        line-height: 1.6;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        font-size: 16px;
+    }
+    .position-title,
+    .position-date,
+    .position-header {
+        font-size: 16px;
+    }
+    .bullet-header {
+        font-size: 1.0rem;
+        font-weight: 600;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        line-height: 1.20588em;
+    }
+}
+
+.contrastText {
+    color: #26C9FF;
+    background: #263238;
+    border-color: #455A64;
+    border-top: solid 1px #37474F,
+}
+
+.scrollTrackerSpy {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    color: #FFFFFF;
+}
+
+.Navigation-Shadow {
+    z-index: 1200;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #2E7D32;
+    right: 0;
+    height: 64px;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
