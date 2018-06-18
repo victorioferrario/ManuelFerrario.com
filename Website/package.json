@@ -11,7 +11,9 @@
         "@types/react-router-dom": "4.2.6",
         "@types/react-scroll": "^1.5.3",
         "@types/react-swipeable-views": "^0.12.1",
+        "popmotion": "^8.2.5",
         "react": "^16.4.0",
+        "react-anchor-link-smooth-scroll": "^1.0.10",
         "react-dom": "^16.4.0",
         "react-loadable": "^5.4.0",
         "react-pdf": "^3.0.5",
@@ -20,7 +22,8 @@
         "react-scripts-ts": "2.16.0",
         "react-scroll": "^1.7.9",
         "react-swipeable-views": "^0.12.13",
-        "react-vimeo": "^2.0.0"
+        "react-vimeo": "^2.0.0",
+        "smoothscroll-polyfill": "^0.4.3"
     },
     "scripts": {
         "start": "react-scripts-ts start",

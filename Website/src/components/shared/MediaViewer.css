@@ -1,21 +1,28 @@
-﻿
-
-
-.menuItem:focus {
+﻿.menuItem:focus {
     color: #FFF!important;
     background-Color: #388E3C
 }
-.menuItem .primary, .menuItem .icon {
+
+.menuItem .primary,
+.menuItem .icon {
     color: #FFFFFF
 }
-
 
 .menuItem:focus {
     background-Color: #388E3C;
     color: #ffffff;
 }
 
-
 .MuiDialog-paperFullScreen-602 {
     background-color: #2E7D32;
+}
+
+.ListItem-XM {
+    font-size: 48px!important
+}
+
+@media (min-width: 600px) {
+    .xx-text-control {
+        font-size: .8rem!important;
+    }
 }

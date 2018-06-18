@@ -38,7 +38,7 @@ section.sitmaps .title {
 }
 
 .card {
-    max-width: 500px;
+    /*max-width: 500px;*/
     min-width: 200px;
 }
 
@@ -104,15 +104,33 @@ section.sitmaps header article {
     padding: 15px;
     margin-top: -15px;
 }
-
+.platform {
+    opacity: 1;
+    transition: all 300ms ease-out
+}
+@media only screen and (max-width: 600px){
+    .app-page-content h2 {
+        font-size: 1.2em;
+    }
+    .app-page-content h4 {
+        font-size: .92em;
+    }
+    .platform{
+        opacity:0;
+    }
+    .ListItem-XM{
+        padding:0
+    }
+}
 @media only screen and (max-width: 650px) {
-    section.sitmaps h1 {
+    section .sitmaps h1 {
         color: #424242;
         font-size: 28px;
         line-height: 1.2em;
         margin-bottom: 20px;
         margin-bottom: 1px;
     }
+
     section.sitmaps h4 {
         color: #039be5;
         font-size: 14px;
@@ -121,6 +139,7 @@ section.sitmaps header article {
         line-height: 28px;
         color: #4285f4;
     }
+
     .overview-exception {
         margin-top: -40px;
         padding-top: 1px !important;

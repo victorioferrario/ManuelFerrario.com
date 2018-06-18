@@ -3,6 +3,8 @@ import * as React from "react";
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 
+import Divider from '@material-ui/core/Divider';
+
 import "./image.css";
 
 import siteMapDoctor from '../../images/sitemap.Doctors.png';
@@ -36,14 +38,17 @@ export const OverviewControl = () => (
 //#region [ DoctorsAndMemberServicesControl                ]
 
     export const DoctorsAndMemberServicesControl = () => (
-        <section className="telemed">     
+        <section className="telemed">   
+            <DividerLineSplitter />
             <main>
                 <h2>CADR Web Platform Site Maps </h2>
                 <img src={siteMapMembers} className="responsive" />
             </main>
+            <DividerLineSplitter />
             <main>
                 <img src={siteMapDoctor} className="responsive" />
             </main>
+            <DividerLineSplitter />
             <main>
                 <img src={siteMapMemberServices} className="responsive" />
             </main>
@@ -53,12 +58,8 @@ export const OverviewControl = () => (
 //#endregion
 // --------------------------------------------------------
 
-// sitemap1800Md
-// sitemap1800MdAdimOps
-// sitemap1800MdClientProducer
-// sitemap1800MdMemberHealthPortal
-// sitemap1800MdMemberServicesPortal
-// sitemap1800MdPhysicianDashboard   
+export const DividerLineSplitter = () => (<React.Fragment><br /> <br /> <Divider /> <br /></React.Fragment>)
+
 
 export const SitemapsForControl1800MD = () => (
     <React.Fragment>
@@ -66,19 +67,18 @@ export const SitemapsForControl1800MD = () => (
             {/*     <h1>1800MD.com Sitemaps </h1>
             <h2>1800MD.com </h2>*/}
             <img src={sitemap1800Md} className="responsive" />
-            {/*  <h2>1800MD.com - Admin Ops. </h2>*/}
+            <DividerLineSplitter />
             <img src={sitemap1800MdAdimOps} className="responsive" />   
-            {/*   <h2>1800MD.com - Client / Producer </h2>*/}
+            <DividerLineSplitter />
             <img src={sitemap1800MdClientProducer} className="responsive" />   
-            {/* <h2>1800MD.com - Members Health Portal </h2>*/}
+            <DividerLineSplitter />
             <img src={sitemap1800MdMemberHealthPortal} className="responsive" />   
-            {/*  <h2>1800MD.com - Members Services Dashboard </h2>*/}
+            <DividerLineSplitter />
             <img src={sitemap1800MdMemberServicesPortal} className="responsive" />   
-            {/*  <h2>1800MD.com - Doctors Dashboard </h2> */}
+            <DividerLineSplitter />
             <img src={sitemap1800MdPhysicianDashboard} className="responsive" />   
             </main>
     </React.Fragment>);
-
 
 export default class SiteMapsControl extends React.Component {
         public render() {

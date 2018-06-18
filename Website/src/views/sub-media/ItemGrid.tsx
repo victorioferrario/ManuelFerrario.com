@@ -54,28 +54,35 @@ import img_7_File_1 from '../../images/past/7_File_1.jpg';
 export const ImageRow1Control = (classes: any) => (
         <React.Fragment>
             <article className={classes.root}>
-            <Grid container={true} spacing={24} style={{maxWidth:950, marginTop:35}}    >
-                <Grid item={true} xs={4}>
+            <Grid container={true} spacing={24} style={{maxWidth:1100, marginTop:35}}    >
+                <Grid item={true} xs={12} md={6} sm={6}>
                     <Card >
                         <CardContent>
-                            <img src={img_72_File_1} style={{  width:'100%' , maxWidth:250, marginTop:5}}/>
+                            <img src={img_72_File_1} style={{  width:'100%' , maxWidth:408, marginTop:5}}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} xs={12} md={6} sm={6}>
                     <Card>
                         <CardContent>
-                            <img src={img_77_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_77_File_1} style={{ width: '100%', maxWidth:408 }}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} xs={12} md={6} sm={6}>
                     <Card>
                         <CardContent>
-                            <img src={img_76_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_76_File_1} style={{ width: '100%', maxWidth:408 }}/>
                         </CardContent>
                     </Card>
-                </Grid>              
+                </Grid>       
+                <Grid item={true} xs={12} md={6} sm={6}>
+                    <Card>
+                        <CardContent>
+                            <img src={img_82_File_1} style={{ width: '100%', maxWidth: 408 }} />
+                        </CardContent>
+                    </Card>
+                </Grid>
             </Grid> 
             </article>
         </React.Fragment>);
@@ -88,47 +95,48 @@ export const ImageRow2Control = (classes: any) => (
     <React.Fragment>
         <Grid container={true} spacing={24} style={{maxWidth:950}}>
 
-            <Grid item={true} xs={4}>
-                    <Card>
-                        <CardContent>
-                            <img src={img_82_File_1} style={{ width: '100%' , maxWidth:250}}/>
-                        </CardContent>
-                    </Card>
-            </Grid>
-            <Grid item={true} xs={4}>
+            
+            <Grid item={true} md={6} sm={6} xs={12}>
                 <Card >
                     <CardContent>
-                        <img src={img_81_File_1} style={{  width:'100%' , maxWidth:250, marginTop:5}}/>
+                        <img src={img_81_File_1} style={{ width: '100%', maxWidth: 408, marginTop:5}}/>
                     </CardContent>
                 </Card>
             </Grid>
-            <Grid item={true} xs={4}>
+            <Grid item={true} md={6} sm={6} xs={12}>
                 <Card>
                     <CardContent>
-                        <img src={img_19_File_1} style={{ width: '100%', maxWidth:250 }}/>
-                    </CardContent>
-                </Card>
-            </Grid>
-
-            <Grid item={true} xs={4}>
-                <Card>
-                    <CardContent>
-                        <img src={img_1_File_1 } style={{ width: '100%', maxWidth:250 }}/>
+                        <img src={img_19_File_1} style={{ width: '100%', maxWidth: 408 }}/>
                     </CardContent>
                 </Card>
             </Grid>
 
-            <Grid item={true} xs={4}>
+            <Grid item={true} md={6} sm={6} xs={12}>
                 <Card>
                     <CardContent>
-                        <img src={img_18_File_1} style={{ width: '100%' , maxWidth:250}}/>
+                        <img src={img_1_File_1} style={{ width: '100%', maxWidth: 408 }}/>
                     </CardContent>
                 </Card>
             </Grid>
-            <Grid item={true} xs={4}>
+
+            <Grid item={true} md={6} sm={6} xs={12}>
                 <Card>
                     <CardContent>
-                        <img src={img_17_File_1} style={{ width: '100%' , maxWidth:250}}/>
+                        <img src={img_18_File_1} style={{ width: '100%', maxWidth: 408}}/>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item={true} md={6} sm={6} xs={12}>
+                <Card>
+                    <CardContent>
+                        <img src={img_17_File_1} style={{ width: '100%', maxWidth: 408}}/>
+                    </CardContent>
+                </Card>
+            </Grid>
+            <Grid item={true} md={6} sm={6} xs={12}>
+                <Card >
+                    <CardContent>
+                        <img src={img_15_File_1} style={{ width: '100%', maxWidth: 480, marginTop: 5 }} />
                     </CardContent>
                 </Card>
             </Grid>
@@ -143,48 +151,49 @@ export const ImageRow3Control = (classes: any) => (
     <React.Fragment>
         <article className={classes.root}>
             <Grid container={true} spacing={24} style={{maxWidth:950}}    >
-                <Grid item={true} xs={4}>
-                    <Card >
+               
+                <Grid item={true} md={6} sm={6} xs={12}>
+                    <Card>
                         <CardContent>
-                            <img src={img_15_File_1} style={{  width:'100%' , maxWidth:250, marginTop:5}}/>
+                            <img src={img_16_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} xs={12}>
                     <Card>
                         <CardContent>
-                            <img src={img_16_File_1} style={{ width: '100%', maxWidth:250 }}/>
-                        </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item={true} xs={4}>
-                    <Card>
-                        <CardContent>
-                            <img src={img_70_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_70_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
                 </Grid>       
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} xs={12}>
                     <Card >
                         <CardContent>
-                            <img src={img_71_File_1} style={{  width:'100%' , maxWidth:250, marginTop:5}}/>
+                            <img src={img_71_File_1} style={{  width:'100%' , maxWidth:480, marginTop:5}}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} xs={12}>
                     <Card>
                         <CardContent>
-                            <img src={img_12_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_12_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} xs={12}>
                     <Card>
                         <CardContent>
-                            <img src={img_13_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_13_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
-                </Grid>                     
+                </Grid>    
+                <Grid item={true} md={6} sm={6} xs={12}>
+                    <Card >
+                        <CardContent>
+                            <img src={img_69_File_1} style={{ width: '100%', maxWidth: 480, marginTop: 5 }} />
+                        </CardContent>
+                    </Card>
+                </Grid>
             </Grid> 
         </article>
     </React.Fragment>);
@@ -197,45 +206,45 @@ export const ImageRow4Control = (classes: any) => (
     <React.Fragment>
         <article className={classes.root}>
             <Grid container={true} spacing={24} style={{maxWidth:950}}    >
-                {/* <Grid item={true} xs={4}>
+                {/* <Grid item={true} md={6} sm={6} XS={12}>
                     <Card >
                         <CardContent>
-                            <img src={img_15_File_1} style={{  width:'100%' , maxWidth:250, marginTop:5}}/>
+                            <img src={img_15_File_1} style={{  width:'100%' , maxWidth:480, marginTop:5}}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} XS={12}>
                     <Card>
                         <CardContent>
-                            <img src={img_16_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_16_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} XS={12}>
                     <Card>
                         <CardContent>
-                            <img src={img_70_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_70_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
                 </Grid>        */}
-                {/* <Grid item={true} xs={4}>
+                {/* <Grid item={true} md={6} sm={6} XS={12}>
                     <Card >
                         <CardContent>
-                            <img src={img_71_File_1} style={{  width:'100%' , maxWidth:250, marginTop:5}}/>
+                            <img src={img_71_File_1} style={{  width:'100%' , maxWidth:480, marginTop:5}}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} XS={12}>
                     <Card>
                         <CardContent>
-                            <img src={img_12_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_12_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} XS={12}>
                     <Card>
                         <CardContent>
-                            <img src={img_13_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_13_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
                 </Grid>                      */}
@@ -252,48 +261,49 @@ export const ImageRow5Control = (classes: any) => (
     <React.Fragment>
         <article className={classes.root}>
             <Grid container={true} spacing={24} style={{maxWidth:950}}    >
-                <Grid item={true} xs={4}>
-                    <Card >
+               
+                <Grid item={true} md={6} sm={6} xs={12}>
+                    <Card>
                         <CardContent>
-                            <img src={img_69_File_1} style={{  width:'100%' , maxWidth:250, marginTop:5}}/>
+                            <img src={img_14_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} xs={12}>
                     <Card>
                         <CardContent>
-                            <img src={img_14_File_1} style={{ width: '100%', maxWidth:250 }}/>
-                        </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item={true} xs={4}>
-                    <Card>
-                        <CardContent>
-                            <img src={img_78_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_78_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
                 </Grid>       
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} xs={12}>
                     <Card >
                         <CardContent>
-                            <img src={img_10_File_1} style={{  width:'100%' , maxWidth:250, marginTop:5}}/>
+                            <img src={img_10_File_1} style={{  width:'100%' , maxWidth:480, marginTop:5}}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} xs={12}>
                     <Card>
                         <CardContent>
-                            <img src={img_11_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_11_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} xs={12}>
                     <Card>
                         <CardContent>
-                            <img src={img_75_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_75_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
-                </Grid>                     
+                </Grid>      
+                <Grid item={true} md={6} sm={6} xs={12}>
+                    <Card >
+                        <CardContent>
+                            <img src={img_73_File_1} style={{ width: '100%', maxWidth: 480, marginTop: 5 }} />
+                        </CardContent>
+                    </Card>
+                </Grid>
             </Grid> 
         </article>
     </React.Fragment>); 
@@ -306,48 +316,63 @@ export const ImageRow6Control = (classes: any) => (
     <React.Fragment>
         <article className={classes.root}>
             <Grid container={true} spacing={24} style={{maxWidth:950}}    >
-                <Grid item={true} xs={4}>
-                    <Card >
+                
+                <Grid item={true} md={6} sm={6} xs={12}>
+                    <Card>
                         <CardContent>
-                            <img src={img_73_File_1} style={{  width:'100%' , maxWidth:250, marginTop:5}}/>
+                            <img src={img_33_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} xs={12}>
                     <Card>
                         <CardContent>
-                            <img src={img_33_File_1} style={{ width: '100%', maxWidth:250 }}/>
-                        </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item={true} xs={4}>
-                    <Card>
-                        <CardContent>
-                            <img src={img_21_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_21_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
                 </Grid>       
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} xs={12}>
                     <Card >
                         <CardContent>
-                            <img src={img_32_File_1} style={{  width:'100%' , maxWidth:250, marginTop:5}}/>
+                            <img src={img_32_File_1} style={{  width:'100%' , maxWidth:480, marginTop:5}}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} xs={12}>
                     <Card>
                         <CardContent>
-                            <img src={img_31_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_31_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item={true} xs={4}>
+                <Grid item={true} md={6} sm={6} xs={12}>
                     <Card>
                         <CardContent>
-                            <img src={img_79_File_1} style={{ width: '100%', maxWidth:250 }}/>
+                            <img src={img_79_File_1} style={{ width: '100%', maxWidth:480 }}/>
                         </CardContent>
                     </Card>
-                </Grid>                     
+                </Grid> 
+                <Grid item={true} md={6} sm={6} xs={12}>
+                    <Card >
+                        <CardContent>
+                            <img src={img_26_File_1} style={{ width: '100%', maxWidth: 480, marginTop: 5 }} />
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item={true} md={6} sm={6} xs={12}>
+                    <Card>
+                        <CardContent>
+                            <img src={img_34_File_1} style={{ width: '100%', maxWidth: 480 }} />
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item={true} md={6} sm={6} xs={12}>
+                    <Card>
+                        <CardContent>
+                            <img src={img_7_File_1} style={{ width: '100%', maxWidth: 480 }} />
+                        </CardContent>
+                    </Card>
+                </Grid>     
             </Grid> 
         </article>
     </React.Fragment>); 
@@ -363,28 +388,8 @@ export const ImageRow7Control = (classes: any) => (
     <React.Fragment>
         <article className={classes.root}>
             <Grid container={true} spacing={24} style={{maxWidth:950}}    >
-                <Grid item={true} xs={4}>
-                    <Card >
-                        <CardContent>
-                            <img src={img_26_File_1} style={{  width:'100%' , maxWidth:250, marginTop:5}}/>
-                        </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item={true} xs={4}>
-                    <Card>
-                        <CardContent>
-                            <img src={img_34_File_1} style={{ width: '100%', maxWidth:250 }}/>
-                        </CardContent>
-                    </Card>
-                </Grid>
-                <Grid item={true} xs={4}>
-                    <Card>
-                        <CardContent>
-                            <img src={img_7_File_1} style={{ width: '100%', maxWidth:250 }}/>
-                        </CardContent>
-                    </Card>
-                </Grid>     
-       
+               
+       Yes
             </Grid> 
         </article>
     </React.Fragment>); 

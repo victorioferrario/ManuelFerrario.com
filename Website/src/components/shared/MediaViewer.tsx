@@ -78,13 +78,8 @@ export class MediaViewer extends React.Component<IPropViewer, IStateViewer> {
             open: true,
             videoItemEnum: arg,
         });
-       // this.setState({ open_collapse: !this.state.open_collapse });
-    };
-    // public handleClickOpen () {
-    //    this.setState({
-    //        open: true,
-    //    });
-    // };
+          };
+    
 
     public handleClose = () => {
         this.setState({ open: false });
@@ -97,39 +92,39 @@ export class MediaViewer extends React.Component<IPropViewer, IStateViewer> {
                 backgroundColor: '#455A64'
             }}>
                 <Paper>
-                    <h4 style={{ paddingLeft: 25, paddingTop: 35 }}> 1800MD.com | Software as a Service Platform</h4>
+                    <h4 style={{ paddingLeft: 25, paddingTop: 35 }}> 1800MD.com | Software as a Service <span className="platform">Platform</span></h4>
                     <Divider />
                     <MenuList style={{ marginTop: 2, paddingTop: 0, paddingBottom: 0}}>
                         <MenuItem className="menuItem"
                             onClick={this.handleClickOpen.bind(this, VideoItemEnum.AdminPortal)}>   
-                            <ListItemIcon className="" >
+                            <ListItemIcon >
                                 <Icon>play_arrow</Icon>
                             </ListItemIcon>
-                            <ListItemText inset={true} primary="Admin Portal - Doctors" />                            
+                            <ListItemText inset={true} primary="Admin Portal - Doctors" className="ListItem-XM"/>                            
                         </MenuItem>
                         <MenuItem className="menuItem" onClick={this.handleClickOpen.bind(this, VideoItemEnum.MemberActivation)}>
-                            <ListItemIcon className="" >
+                            <ListItemIcon>
                                 <Icon>play_arrow</Icon>
                             </ListItemIcon>
-                            <ListItemText inset={true} primary="Member Dashboard: Account Activation" />
+                            <ListItemText inset={true} primary="Member Dashboard: Account Activation" className="ListItem-XM"/>
                         </MenuItem>
                         <MenuItem className="menuItem" onClick={this.handleClickOpen.bind(this, VideoItemEnum.MemberEConsult)}>
-                            <ListItemIcon className="" >
+                            <ListItemIcon >
                                 <Icon>play_arrow</Icon>
                             </ListItemIcon>
-                            <ListItemText inset={true} primary="Member Dashboard: Ordering E-Consult" />
+                            <ListItemText inset={true} primary="Member Dashboard: Ordering E-Consult" className="ListItem-XM xx-text-control"/>
                         </MenuItem>
                         <MenuItem className="menuItem" onClick={this.handleClickOpen.bind(this, VideoItemEnum.MemberHealthRecords)}>
-                            <ListItemIcon className="" >
+                            <ListItemIcon  >
                                 <Icon>play_arrow</Icon>
                             </ListItemIcon>
-                            <ListItemText inset={true} primary="Member Dashboard: Health Records" />
+                            <ListItemText inset={true} primary="Member Dashboard: Health Records" className="ListItem-XM xx-text-control"/>
                         </MenuItem>
                         <MenuItem className="menuItem" onClick={this.handleClickOpen.bind(this, VideoItemEnum.DoctorEConsult)}>
-                            <ListItemIcon className="" >
+                            <ListItemIcon >
                                 <Icon>play_arrow</Icon>
                             </ListItemIcon>
-                            <ListItemText inset={true} primary="Doctor Dashboard: E-Consult Servicing" />
+                            <ListItemText inset={true} primary="Doctor Dashboard: E-Consult Servicing" className="ListItem-XM xx-text-control"/>
                         </MenuItem>
 
                     </MenuList>

@@ -5,6 +5,8 @@ import Button from "@material-ui/core/Button";
 import Fade from "@material-ui/core/Fade";
 import Icon from "@material-ui/core/Icon";
 
+import PageCheckerControl from "./PageChecker";
+
 // import { animateScroll } from "react-scroll";
 
 
@@ -40,6 +42,12 @@ export default class ScrollTopControl extends React.Component <IScrollTopControl
             this.easeOutCubic = this.easeOutCubic.bind(this);
         }        
         public componentDidMount() {
+              const temp = document.getElementById(this.props.containerId) != null ? 
+                document.getElementById(this.props.containerId): null;
+                this.setState ( {     
+                    element:temp,
+                     elementIsAvailable : temp!==null                   
+                });  
             if (this.state.elementIsAvailable && this.state.element) {              
                 this.state.element.addEventListener("scroll", this.handleScroll);
              }    
@@ -47,23 +55,26 @@ export default class ScrollTopControl extends React.Component <IScrollTopControl
          public componentWillUnmount() {
             if (this.state.elementIsAvailable && this.state.element) {              
                 this.state.element.removeEventListener("scroll", this.handleScroll);
+                window.addEventListener('scroll', this.handleScroll);
              }             
         }
-        public handleScroll() {
+        public handleScroll() {          
             if (this.state.elementIsAvailable && this.state.element) {      
+                console.log(this.state.element.scrollTop);
                     if ( this.state.element.scrollTop > 100) {
                         this.setState({elementIsFadedIn: true });                       
                     }
                     if (this.state.element.scrollTop  < 99) {
                         this.setState({elementIsFadedIn: false });        
                     }
-                }
+                    console.log( this.state.element.scrollTop);
+
+                     console.log( this.state.element.scrollTop);
+            }         
         }       
-        public handleClick() {
-            console.log("handleCLick---")
+        public handleClick() {     
             if (this.state.elementIsAvailable && this.state.element) {              
                 const id:number = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
-
                 this.setState({ 
                     intervalId: id ,
                     startValue: this.state.element.scrollTop
@@ -82,6 +93,7 @@ export default class ScrollTopControl extends React.Component <IScrollTopControl
                             <Icon style={{ fontSize: 22 }}>expand_less</Icon>
                         </Button>
                     </Fade>
+                    <PageCheckerControl containerId="appContentId"/>   
             </aside>);
         }
 

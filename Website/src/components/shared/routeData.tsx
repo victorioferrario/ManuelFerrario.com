@@ -41,9 +41,9 @@ export const MyArticles = (props: any) => <NavLink to="/articles" {...props} />
 export const MediaWork
     = (props: any) => <NavLink to="/media/1" {...props} />
 export const MediaEnterpriseDocs
-    = (props: any) => <NavLink to="/media/3" {...props} />
+    = (props: any) => <NavLink to="/media/4" {...props} />
 export const MediaHiFiWireframes
-    = (props: any) => <NavLink to="/media/2" {...props} />
+    = (props: any) => <NavLink to="/media/3" {...props} />
 export const MediaUIUX
     = (props: any) => <NavLink to="/media/4" {...props} />
 

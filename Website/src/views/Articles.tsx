@@ -12,6 +12,7 @@ export default class ArticlesPage extends React.Component<{}, {}> {
   public titleProps: ITitleProps = {
     label: "Articles"
   };
+  
   public render() {
     return (
         <Fade in={true}>    

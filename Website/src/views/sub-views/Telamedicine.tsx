@@ -4,6 +4,7 @@
 import * as React from "react";
 import "./Telamedicine.css";
 
+import ScrollTopControl from "../../components/shared/ScrollTopControl";
 
 import logo04 from '../../images/e-commerce.svg';
 import logo05 from '../../images/storage-databases.svg';
@@ -629,6 +630,10 @@ export interface ICADRWebPlatformState {
 
 // import ScrollTopControl from "../../components/shared/ScrollTopControl";
 
+export const jqueryButton = () => (
+    <a id="jqueryMeDude" href="javascript:void(0)" className="floating-button">[ ^ ] </a> 
+)
+
 export default class CADRWebPlatform extends React.Component<{}, ICADRWebPlatformState> {
     public myRef: any;
     constructor(props: any, state: ICADRWebPlatformState) {
@@ -676,6 +681,8 @@ export default class CADRWebPlatform extends React.Component<{}, ICADRWebPlatfor
             }
         }
     }   
+
+
     public render() {
         return (
             <React.Fragment>
@@ -684,12 +691,14 @@ export default class CADRWebPlatform extends React.Component<{}, ICADRWebPlatfor
                 <ConsumerMemberMobileApplicationsControl />
                 <PartnerApplicationsControl />
                 <MultiSpecialityProgramTemplate />
-                <AdministrativeControls />
-               {/* <ScrollTopControl 
+                <AdministrativeControls />               
+
+                {/* <jqueryButton  /> */}
+                <ScrollTopControl 
                     containerId="appContentId" 
                     delayInMs={33.0} 
                     scrollStepInPx={50}
-                /> */}
+                /> 
             </React.Fragment>);
     }
 }

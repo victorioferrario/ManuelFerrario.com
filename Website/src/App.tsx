@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navigation from "./containers/Navigation";
 import withStyles, { StyleRulesCallback, WithStyles } from '@material-ui/core/styles/withStyles';
 
@@ -19,14 +19,19 @@ export interface IAppState {
     onSubmit: any;
     parent: any;
     open: boolean
+
 }
+
+
 
 class App extends React.Component<WithStyles<'root'>, IAppState> {
 
     constructor(props: any, state: IAppState) {
         super(props);
         this.handleClose = this.handleClose.bind(this);
-        this.handleClick = this.handleClick.bind(this);
+        this.handleClick = this.handleClick.bind(this);     
+        
+       // history={hashHistory}
     }
     public handleClose() {
         this.setState({
@@ -45,11 +50,14 @@ class App extends React.Component<WithStyles<'root'>, IAppState> {
         this.setState({
         });
     };
-    public render() {
+    public render() {       
         return (
-            <BrowserRouter>
-                <Navigation />
-            </BrowserRouter>
+            <React.Fragment>               
+            <Router>                     
+                  <Navigation />             
+            </Router>
+            </React.Fragment>
+
         );        
     }
 }

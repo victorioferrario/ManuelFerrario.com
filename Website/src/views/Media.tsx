@@ -1,10 +1,11 @@
 import * as React from "react";
 
-import { Link, Route, Switch } from "react-router-dom";
+
+import { Link, Route, Switch, } from "react-router-dom";
 
 /* import VideoYouTubeController from "../components/shared/YouTube"; */
 
-import Button from '@material-ui/core/Button';
+
 import Fade from "@material-ui/core/Fade";
 import Icon from '@material-ui/core/Icon';
 import Slide from '@material-ui/core/Slide';
@@ -24,7 +25,9 @@ import WorkControl from "./sub-media/work";
 import { MediaViewer } from "../components/shared/MediaViewer";
 
 // <MediaViewer />
-
+export const JqueryButton = (props:any) => (
+    <a id={"jqueryMeDude"} href="javascript:void(0)" className="floating-button" {...props}>[ ^ ] </a> 
+  )
 
 //#region [ WebPage            ]
 
@@ -92,9 +95,9 @@ export const MyLinkToButton = (props: any) => <Link to="/media/4"  {...props}  /
 
 
 export const ChildLink04 = (props: any) => (    
-    <Button component={MyLinkToButton}>
+    <Link to="/media/1">
         Enterprise Docs
-    </Button>
+    </Link>
 );
 
 
@@ -110,8 +113,8 @@ export default class MediaPage extends React.Component<{}, {}> {
     public render() {
         const temp: IPropsTabControl = {
             classes: "",
-            message: "hello"
-        }        
+            message: "hello"           
+        } 
         return (
             <section>
                 <Fade in={true}>
@@ -119,7 +122,7 @@ export default class MediaPage extends React.Component<{}, {}> {
                         <section className="app-page-header">
                             <TitleComponent label={this.titleProps.label}
                                 children={
-                            <TabsControl classes={temp}                               
+                            <TabsControl classes={temp}                                     
                                 childUX={ChildLink04}
                                 childDocs={ChildLink02}
                                 childWireFrames={ChildLink03} />
@@ -128,23 +131,22 @@ export default class MediaPage extends React.Component<{}, {}> {
                     </React.Fragment>
                 </Fade>
                 <Slide in={true} direction="up" mountOnEnter={true} unmountOnExit={true}>                   
-                        <section className="app-page-content">                     
-                            <Switch>         
-                                <Route exact={true} path="/media" component={DefaultPage} />                 
-                                <Route exact={true} path="/media/1" component={WebPage} />
-                                <Route exact={true} path="/media/2" component={DiagramsPage} />
-                                <Route exact={true} path="/media/3" component={WireframesPage} />
-                                <Route exact={true} path="/media/4" component={UIs} />
-                            </Switch>                         
-                        </section>   
-                           
+                    <section className="app-page-content">                     
+                        <Switch>
+                            <Route exact={true} path="/media" component={DefaultPage} />                
+                            <Route exact={true} path="/media/1" component={WebPage} />
+                            <Route exact={true} path="/media/2" component={DiagramsPage} />
+                            <Route exact={true} path="/media/3" component={WireframesPage} />
+                            <Route exact={true} path="/media/4" component={UIs} />
+                        </Switch>                   
+                    </section>  
                 </Slide>
                 <ScrollTopControl 
                     containerId="appContentId" 
                     delayInMs={33.0} 
                     scrollStepInPx={50}
-            />
-            </section>
+                />
+             </section>
         );
     }
 }
