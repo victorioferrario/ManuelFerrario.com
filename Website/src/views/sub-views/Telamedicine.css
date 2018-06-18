@@ -185,6 +185,13 @@ ol.portal>li.site-label>span {
     font-weight: 500 !important;
 }
 
+.site-label>span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4285f4 !important;
+    font-weight: 500 !important;
+}
+
 ol.portal li ul {
     list-style-type: circle;
 }

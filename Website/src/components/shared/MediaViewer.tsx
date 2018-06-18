@@ -126,10 +126,8 @@ export class MediaViewer extends React.Component<IPropViewer, IStateViewer> {
                             </ListItemIcon>
                             <ListItemText inset={true} primary="Doctor Dashboard: E-Consult Servicing" className="ListItem-XM xx-text-control"/>
                         </MenuItem>
-
                     </MenuList>
                 </Paper>
-
                 <Dialog
                     fullScreen={true}
                     open={this.state.open}

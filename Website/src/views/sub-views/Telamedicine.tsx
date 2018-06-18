@@ -48,17 +48,64 @@ export const PlatformOverviewControl = () => (
                         </tbody>
                     </table>
                 </div>
-                <div className="desc" style={{ border: 'solid 0 #039be5' }}>
+                <div className="desc" >
+                   <table>
+                       <tbody>
+                           <tr>
+                               <td style={{ width: 1 }}>&nbsp;</td>
+                               <td className="site-label"><span>Individual &amp; Family Plan Offerings</span></td>
+                           </tr>
+                           <tr>
+                           <td style={{ width: 1 }}>&nbsp;</td>
+                               <td>
+                               Compare Plans
+                               </td>
+                           </tr>
+                           <tr>
+                                <td style={{ width: 1 }}>&nbsp;</td>
+                               <td>
+                               Registration Wizards
+                               </td>
+                           </tr>
+                       </tbody>
+                   </table>
+                   <table>
+                       <tbody>
+                           <tr>
+                               <td style={{ width: 1 }}>&nbsp;</td>
+                               <td className="site-label"><span>Group Membership Programs offerings</span></td>
+                           </tr>
+                           <tr>
+                           <td style={{ width: 1 }}>&nbsp;</td>
+                               <td>
+                               Educating Groups on the value of Telemedicine.
+                               </td>
+                           </tr>
+                           <tr>
+                                <td style={{ width: 1 }}>&nbsp;</td>
+                               <td>
+                               Product offerings targeted towards the following categories
+                               <ol>
+                                        <li>Health Insurance Plans</li>
+                                        <li>	Healthcare Brokers & Consultants</li>
+                                        <li>Small(0-50) & Large(50+) Employer Groups</li>
+                                        <li>	Health care Third-party Administrators(TPA)</li>
+                                        <li>Accountable Care Organizations(ACO) & Associations</li>
+                                    </ol>
+                               </td>
+                           </tr>
+                       </tbody>
+                   </table>
                     <ol className="portal">
-                        <li className="site-label"><span>Individual &amp; Family Plan Offerings</span>
+                        {/* <li className="site-label"><span>Individual &amp; Family Plan Offerings</span>
                             <ul>
                                 <li>
                                     Compare Plans </li>
                                 <li>
                                     Registration Wizards</li>
                             </ul>
-                        </li>
-                        <li className="site-label"><span>Group Membership Programs offerings</span>
+                        </li> */}
+                        {/* <li className="site-label"><span>Group Membership Programs offerings</span>
                             <ul>
                                 <li>
                                     Educating Groups on the value of Telemedicine.</li>
@@ -73,7 +120,7 @@ export const PlatformOverviewControl = () => (
                                     </ol>
                                 </li>
                             </ul>
-                        </li>
+                        </li> */}
                     </ol>
                 </div>
                 <div className="flex-card" style={{ border: 'solid 0 #039be5' }}>
