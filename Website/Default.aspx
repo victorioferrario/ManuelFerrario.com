@@ -1,16 +1,32 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
-
+﻿<%@ Page Language="C#" %>
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head runat="server">
-    <title></title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120733891-1"></script>
+    <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-120733891-1")</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ManuelFerrario.com | Talent Showcase" />
+    <meta name="application-name" content="ManuelFerrario.com | Excited about Technology" />
+    <meta name="msapplication-TileImage" content="http://manuelferrario.com/Content/images/touch/ms-touch-icon-144x144-precomposed.png" />
+    <meta name="msapplication-TileColor" content=" #000000" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="http://www.manuelferrario.com/manifest.json" />
+    <link rel="shortcut icon" href="http://www.manuelferrario.com/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://www.manuelferrario.com/Content/images/touch/icon-128x128.png" />
+    <link rel="icon" sizes="196x196" href="http://www.manuelferrario.com/Content/images/touch/chrome-touch-icon-196x196.png" />
+    <link rel="apple-touch-icon-precomposed" href="http://www.manuelferrario.com/apple-touch-icon-precomposed.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Condensed" rel="stylesheet">
+    <title>ManuelFerrario.com | Excited about Technology</title>        
+    <link href="/static/css/main.4b15ea1c.css" rel="stylesheet">
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-
-        </div>
-    </form>
+    <noscript>You need to enable JavaScript to run this app.</noscript><section id="root"></section>
+    <script type="text/javascript" src="/static/js/main.7aec60a0.js"></script>
 </body>
 </html>

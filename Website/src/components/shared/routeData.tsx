@@ -41,11 +41,13 @@ export const MyArticles = (props: any) => <NavLink to="/articles" {...props} />
 export const MediaWork
     = (props: any) => <NavLink to="/media/1" {...props} />
 export const MediaEnterpriseDocs
-    = (props: any) => <NavLink to="/media/4" {...props} />
-export const MediaHiFiWireframes
+    = (props: any) => <NavLink to="/media/2" {...props} />
+export const MediaSitemaps
     = (props: any) => <NavLink to="/media/3" {...props} />
 export const MediaUIUX
     = (props: any) => <NavLink to="/media/4" {...props} />
+export const MediaWireframes
+    = (props: any) => <NavLink to="/media/5" {...props} />
 
 //#endregion
 
@@ -181,18 +183,24 @@ export class MenuListControl extends React.Component<IPropsMenuListControl, ISta
                             <ListItemText inset={true} secondary="Enterprise Planning" />
                         </ListItem>
                         <ListItem button={true}
-                            component={MediaHiFiWireframes} className="nested-list-item"
+                            component={MediaSitemaps} className="nested-list-item"
                             onClick={this.hadleToggleClick}>
                             <ListItemIcon>
                                 <Icon>transform</Icon>
                             </ListItemIcon>
-                            <ListItemText inset={true} secondary="Hi-Fi Wireframes" />
+                            <ListItemText inset={true} secondary="Sitemaps" />
                         </ListItem>
                         <ListItem button={true} component={MediaUIUX} className="nested-list-item" onClick={this.hadleToggleClick}>
                             <ListItemIcon>
                                 <Icon>important_devices</Icon>
                             </ListItemIcon>
                             <ListItemText inset={true} secondary="Video" />
+                        </ListItem>
+                        <ListItem button={true} component={MediaWireframes} className="nested-list-item" onClick={this.hadleToggleClick}>
+                            <ListItemIcon>
+                                <Icon>important_devices</Icon>
+                            </ListItemIcon>
+                            <ListItemText inset={true} secondary="Wireframes" />
                         </ListItem>
                     </List>
                 </Collapse>

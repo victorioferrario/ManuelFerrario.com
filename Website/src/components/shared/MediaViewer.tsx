@@ -147,8 +147,7 @@ export class MediaViewer extends React.Component<IPropViewer, IStateViewer> {
                     <section style={{
                         backgroundColor:'#455A64'}}>                      
                         <React.Fragment> {
-                            this.props.componet
-                        }
+                            this.props.componet                        }
                         </React.Fragment>
                         <YouTubeController videoItemEnum={this.state.videoItemEnum} />
                     </section>

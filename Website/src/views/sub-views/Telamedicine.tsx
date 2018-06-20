@@ -1,16 +1,15 @@
-
-
-
 import * as React from "react";
 import "./Telamedicine.css";
 
 import ScrollTopControl from "../../components/shared/ScrollTopControl";
 
+import logoAdmin from '../../images/hire.svg';
 import logo04 from '../../images/e-commerce.svg';
 import logo05 from '../../images/storage-databases.svg';
 import logomMobile from '../../images/mobile-apps-and-sites.svg';
 import logomMembers from '../../images/meeting-experiences.svg';
 import pictureMemberDashboard from '../../images/MemberDashboard.jpg';
+import logoPartnerships from '../../images/virtual-machines.svg';
 
 //#region [ Platform            
 
@@ -48,64 +47,17 @@ export const PlatformOverviewControl = () => (
                         </tbody>
                     </table>
                 </div>
-                <div className="desc" >
-                   <table>
-                       <tbody>
-                           <tr>
-                               <td style={{ width: 1 }}>&nbsp;</td>
-                               <td className="site-label"><span>Individual &amp; Family Plan Offerings</span></td>
-                           </tr>
-                           <tr>
-                           <td style={{ width: 1 }}>&nbsp;</td>
-                               <td>
-                               Compare Plans
-                               </td>
-                           </tr>
-                           <tr>
-                                <td style={{ width: 1 }}>&nbsp;</td>
-                               <td>
-                               Registration Wizards
-                               </td>
-                           </tr>
-                       </tbody>
-                   </table>
-                   <table>
-                       <tbody>
-                           <tr>
-                               <td style={{ width: 1 }}>&nbsp;</td>
-                               <td className="site-label"><span>Group Membership Programs offerings</span></td>
-                           </tr>
-                           <tr>
-                           <td style={{ width: 1 }}>&nbsp;</td>
-                               <td>
-                               Educating Groups on the value of Telemedicine.
-                               </td>
-                           </tr>
-                           <tr>
-                                <td style={{ width: 1 }}>&nbsp;</td>
-                               <td>
-                               Product offerings targeted towards the following categories
-                               <ol>
-                                        <li>Health Insurance Plans</li>
-                                        <li>	Healthcare Brokers & Consultants</li>
-                                        <li>Small(0-50) & Large(50+) Employer Groups</li>
-                                        <li>	Health care Third-party Administrators(TPA)</li>
-                                        <li>Accountable Care Organizations(ACO) & Associations</li>
-                                    </ol>
-                               </td>
-                           </tr>
-                       </tbody>
-                   </table>
+                <div className="desc" >                  
                     <ol className="portal">
-                        {/* <li className="site-label"><span>Individual &amp; Family Plan Offerings</span>
+                        <li className="site-label"><span>Individual &amp; Family Plan Offerings</span>
                             <ul>
                                 <li>
                                     Compare Plans </li>
                                 <li>
                                     Registration Wizards</li>
                             </ul>
-                        </li> */}
-                        {/* <li className="site-label"><span>Group Membership Programs offerings</span>
+                        </li>
+                        <li className="site-label"><span>Group Membership Programs offerings</span>
                             <ul>
                                 <li>
                                     Educating Groups on the value of Telemedicine.</li>
@@ -120,7 +72,7 @@ export const PlatformOverviewControl = () => (
                                     </ol>
                                 </li>
                             </ul>
-                        </li> */}
+                        </li>
                     </ol>
                 </div>
                 <div className="flex-card" style={{ border: 'solid 0 #039be5' }}>
@@ -148,7 +100,6 @@ export const PlatformOverviewControl = () => (
     </section >
 );
 //#endregion
-
 //#region  [ Consumer Web        
 
 export const ConsumerMemberWebApplicationsControl = () => (
@@ -269,12 +220,6 @@ export const ConsumerMemberWebApplicationsControl = () => (
     </section >);
 
 //#endregion
-
-
-//  <div className="title-2">Consumer / Member Mobile Applications</div>
-//    <h4>Health information and access from anywhere</h4>
-
-
 //#region [ Consumer Mobile     
 
 import pictureMemberMobile01 from '../../images/idr247.png';
@@ -323,7 +268,6 @@ export const ConsumerMemberMobileApplicationsControl = () => (
         </header>
     </section >);
 //#endregion
-
 //#region [ Partner direct to consumer     
 
 
@@ -441,12 +385,6 @@ export const PartnerApplicationsControl = () => (
         </header>
     </section >);
 //#endregion
-
-
-
-import logoPartnerships from '../../images/virtual-machines.svg';
-
-
 //#region [ Multi-Specialty Program Template 1]
 
 export const MultiSpecialityProgramTemplate = () => (
@@ -536,12 +474,6 @@ export const MultiSpecialityProgramTemplate = () => (
     </section >);
 
 //#endregion
-
-
-// logomMembers
-
-import logoAdmin from '../../images/hire.svg';
-
 //#region  [ Consumer Web        
 
 
@@ -667,21 +599,12 @@ export const AdministrativeControls = () => (
         </header>
     </section>);
 
-
-// 5	ADMINISTRATIVE & SERVICE FULFILLMENT APPLICATIONS
-
+ //#endregion   
 export interface ICADRWebPlatformState {
     myRef: any;
     isFadeIn: boolean;
 }
-
-// import ScrollTopControl from "../../components/shared/ScrollTopControl";
-
-export const jqueryButton = () => (
-    <a id="jqueryMeDude" href="javascript:void(0)" className="floating-button">[ ^ ] </a> 
-)
-
-export default class CADRWebPlatform extends React.Component<{}, ICADRWebPlatformState> {
+export default class CADRWebPlatform extends React.Component<{}, ICADRWebPlatformState> {    
     public myRef: any;
     constructor(props: any, state: ICADRWebPlatformState) {
         super(props);
@@ -727,27 +650,69 @@ export default class CADRWebPlatform extends React.Component<{}, ICADRWebPlatfor
                 }
             }
         }
-    }   
-
-
+    }
     public render() {
-        return (
-            <React.Fragment>
+        return (<React.Fragment>
                 <PlatformOverviewControl />
                 <ConsumerMemberWebApplicationsControl />
                 <ConsumerMemberMobileApplicationsControl />
                 <PartnerApplicationsControl />
                 <MultiSpecialityProgramTemplate />
                 <AdministrativeControls />               
-
-                {/* <jqueryButton  /> */}
                 <ScrollTopControl 
                     containerId="appContentId" 
                     delayInMs={33.0} 
-                    scrollStepInPx={50}
-                /> 
+                    scrollStepInPx={50}/> 
             </React.Fragment>);
     }
 }
 
 
+
+// <table>
+// <tbody>
+//     <tr>
+//         <td style={{ width: 1 }}>&nbsp;</td>
+//         <td className="site-label"><span>Individual &amp; Family Plan Offerings</span></td>
+//     </tr>
+//     <tr>
+//     <td style={{ width: 1 }}>&nbsp;</td>
+//         <td>
+//         Compare Plans
+//         </td>
+//     </tr>
+//     <tr>
+//          <td style={{ width: 1 }}>&nbsp;</td>
+//         <td>
+//         Registration Wizards
+//         </td>
+//     </tr>
+// </tbody>
+// </table>
+// <table>
+// <tbody>
+//     <tr>
+//         <td style={{ width: 1 }}>&nbsp;</td>
+//         <td className="site-label"><span>Group Membership Programs offerings</span></td>
+//     </tr>
+//     <tr>
+//     <td style={{ width: 1 }}>&nbsp;</td>
+//         <td>
+//         Educating Groups on the value of Telemedicine.
+//         </td>
+//     </tr>
+//     <tr>
+//          <td style={{ width: 1 }}>&nbsp;</td>
+//         <td>
+//         Product offerings targeted towards the following categories
+//         <ol>
+//                  <li>Health Insurance Plans</li>
+//                  <li>	Healthcare Brokers & Consultants</li>
+//                  <li>Small(0-50) & Large(50+) Employer Groups</li>
+//                  <li>	Health care Third-party Administrators(TPA)</li>
+//                  <li>Accountable Care Organizations(ACO) & Associations</li>
+//              </ol>
+//         </td>
+//     </tr>
+// </tbody>
+// </table>

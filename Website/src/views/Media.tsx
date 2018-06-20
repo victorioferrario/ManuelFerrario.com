@@ -23,6 +23,7 @@ import WorkControl from "./sub-media/work";
 
 
 import { MediaViewer } from "../components/shared/MediaViewer";
+import { PdfViewer } from "../components/shared/PdfViewer";
 
 // <MediaViewer />
 export const JqueryButton = (props:any) => (
@@ -60,6 +61,15 @@ export const UIs = () =>
         <section>
             <h2>Video Showcase</h2>                       
             <div><MediaViewer /></div>
+        </section>    
+   </Fade>;
+
+
+export const WireframeViewer = () =>
+    <Fade in={true}>
+        <section>
+            <h2>Wireframes Showcase</h2>                       
+            <div><PdfViewer /></div>
         </section>    
    </Fade>;
 export const DefaultPage = () =>
@@ -138,6 +148,7 @@ export default class MediaPage extends React.Component<{}, {}> {
                             <Route exact={true} path="/media/2" component={DiagramsPage} />
                             <Route exact={true} path="/media/3" component={WireframesPage} />
                             <Route exact={true} path="/media/4" component={UIs} />
+                            <Route exact={true} path="/media/5" component={WireframeViewer} />
                         </Switch>                   
                     </section>  
                 </Slide>

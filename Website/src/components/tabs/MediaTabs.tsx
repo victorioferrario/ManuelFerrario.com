@@ -54,6 +54,7 @@ export const MyLink = (props: any) => <Link to="/media/1" {...props} />;
 export const MyLink2 = (props: any) => <Link to="/media/2" {...props} />;
 export const MyLink3 = (props: any) => <Link to="/media/3" {...props} />;
 export const MyLink4 = (props: any) => <Link to="/media/4" {...props} />;
+export const MyLink5 = (props: any) => <Link to="/media/5" {...props} />;
 // export const Link1 = () => (<Link  to="/media/1">Work</Link>);
 // export const Link2 = () => (<Link  to="/media/2">Enterprise Planning</Link>);
 // export const Link3 = () => (<Link  to="/media/3">Sitemaps & Wireframes</Link>);
@@ -129,8 +130,9 @@ export class TabsControl extends React.Component<
           >
             <Tab label="Work" component={MyLink} />
             <Tab label="Enterprise Planning" component={MyLink2} />
-            <Tab label="Wireframes & Site Maps" component={MyLink3} />
+            <Tab label="Site Maps" component={MyLink3} />
             <Tab label="Videos" component={MyLink4} />
+            <Tab label="Wireframes" component={MyLink5} />
           </Tabs>
         </AppBar>
         {value === 0 && <TabContainer />}
@@ -138,6 +140,7 @@ export class TabsControl extends React.Component<
         {value === 2 && <TabContainer />}
         {value === 3 && <TabContainer />}
         {value === 4 && <TabContainer />}
+        {value === 5 && <TabContainer />}
         {this.debuggerText}
       </div>
     );

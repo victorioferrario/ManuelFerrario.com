@@ -1,17 +1,11 @@
-import { TestOutput } from 'tslint/lib/test';
+
 import * as React from 'react';
+
 
 import Dialog from '@material-ui/core/Dialog';
 
 
 
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-
-import Icon from '@material-ui/core/Icon';
-
-import MenuList from '@material-ui/core/MenuList';
-import MenuItem from '@material-ui/core/MenuItem';
 
 import Paper from '@material-ui/core/Paper';
 
@@ -26,6 +20,11 @@ import Typography from '@material-ui/core/Typography';
 import CloseIcon from '@material-ui/icons/Close';
 
 import Slide from '@material-ui/core/Slide';
+// import { DividerLineSplitter } from '../../views/sub-media/sitemaps';
+
+import {PdfViewerMenuListControl} from "./PdfViewerMenuList";
+
+import {PdfIframeControl} from "./PdfIframe";
 
 export interface IPropsPdfViewer{
     
@@ -42,18 +41,27 @@ export interface IStatePdfViewer{
 export function Transition(props: any) {
     return <Slide direction="up" {...props} />;
 }
+ 
 
-export class MediaViewer extends React.Component<IPropsPdfViewer, IStatePdfViewer> { 
 
+export class PdfViewer extends React.Component<IPropsPdfViewer, IStatePdfViewer> { 
+
+    public state: IStatePdfViewer = {
+        open: false,
+        pdfItem: ""
+    }
     constructor(props:IPropsPdfViewer, state:IStatePdfViewer){
         super(props);
-
-
+        this.state = {
+            open:false,
+            pdfItem: ""
+        }
     }
-
     
     public handleClickOpen = (arg:any) => {
-        this.setState({ open: true });
+        console.log(arg);
+        this.setState({ open: true, 
+            pdfItem: "media/pdf/" + arg });
      };
     
 
@@ -66,11 +74,21 @@ export class MediaViewer extends React.Component<IPropsPdfViewer, IStatePdfViewe
             <div style={{
                 backgroundColor: '#455A64'
             }}>
-                TestOutput
+                {this.PdfContainer()}
             </div>);
     }
     public PdfContainer(){
-       return(<Dialog
+        
+       return(
+        <div style={{
+            backgroundColor: '#455A64'
+        }}>
+            <Paper>
+                <h4 style={{ paddingLeft: 25, paddingTop: 35, marginTop:'-10px' }}> Dashboards</h4>
+                <Divider />
+                <PdfViewerMenuListControl name="Shady" onHandleClick={this.handleClickOpen} />            
+            </Paper>
+        <Dialog
                     fullScreen={true}
                     open={this.state.open}
                     onClose={this.handleClose}
@@ -80,7 +98,7 @@ export class MediaViewer extends React.Component<IPropsPdfViewer, IStatePdfViewe
                     <AppBar style={{ background: '#388E3C'}}>
                         <Toolbar>                            
                             <Typography variant="title" color="inherit" style={{ flex: 1}}>
-                                Media Viewer : 1800 MD</Typography>
+                                PDF Viewer</Typography>
                             <IconButton color="inherit" onClick={this.handleClose} aria-label="Close">
                                 <CloseIcon />
                             </IconButton>
@@ -89,51 +107,14 @@ export class MediaViewer extends React.Component<IPropsPdfViewer, IStatePdfViewe
                     <section style={{
                         backgroundColor:'#455A64'}}>                      
                         <React.Fragment> {
-                            this.props.componet
+                            <PdfIframeControl pdfUrl={this.state.pdfItem} />                            
                         }
-                        </React.Fragment>
-                       
+                        </React.Fragment>                       
                     </section>
-                </Dialog>) ;
+                </Dialog>  
+        </div>) ;
     }
-    public MenuContainer(){
-        return ( <Paper>
-            <h4 style={{ paddingLeft: 25, paddingTop: 35 }}> 1800MD.com | Software as a Service <span className="platform">Platform</span></h4>
-            <Divider />
-            <MenuList style={{ marginTop: 2, paddingTop: 0, paddingBottom: 0}}>
-                <MenuItem className="menuItem"
-                    onClick={this.handleClickOpen.bind(this,"file")}>   
-                    <ListItemIcon >
-                        <Icon>play_arrow</Icon>
-                    </ListItemIcon>
-                    <ListItemText inset={true} primary="Admin Portal - Doctors" className="ListItem-XM"/>                            
-                </MenuItem>
-                <MenuItem className="menuItem" onClick={this.handleClickOpen.bind(this, "file")}>
-                    <ListItemIcon>
-                        <Icon>play_arrow</Icon>
-                    </ListItemIcon>
-                    <ListItemText inset={true} primary="Member Dashboard: Account Activation" className="ListItem-XM"/>
-                </MenuItem>
-                <MenuItem className="menuItem" onClick={this.handleClickOpen.bind(this,"file")}>
-                    <ListItemIcon >
-                        <Icon>play_arrow</Icon>
-                    </ListItemIcon>
-                    <ListItemText inset={true} primary="Member Dashboard: Ordering E-Consult" className="ListItem-XM xx-text-control"/>
-                </MenuItem>
-                <MenuItem className="menuItem" onClick={this.handleClickOpen.bind(this, "file")}>
-                    <ListItemIcon  >
-                        <Icon>play_arrow</Icon>
-                    </ListItemIcon>
-                    <ListItemText inset={true} primary="Member Dashboard: Health Records" className="ListItem-XM xx-text-control"/>
-                </MenuItem>
-                <MenuItem className="menuItem" onClick={this.handleClickOpen.bind(this,"file")}>
-                    <ListItemIcon >
-                        <Icon>play_arrow</Icon>
-                    </ListItemIcon>
-                    <ListItemText inset={true} primary="Doctor Dashboard: E-Consult Servicing" className="ListItem-XM xx-text-control"/>
-                </MenuItem>
-            </MenuList>
-        </Paper>);
-    }
+    
+
 
 }

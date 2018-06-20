@@ -92,6 +92,12 @@ export const styles2 = (theme: any) => ({
         width: "100%"
     }
 });
+export const NoMatch = ()=> (
+    <React.Fragment>
+        <h4>Error</h4>
+        <p>There was an error with the page you were trying to load.</p>
+    </React.Fragment>
+)
 class Navigation extends React.Component<INavigationProps, any> {
 
     public elementAppContent: any;
@@ -102,6 +108,7 @@ class Navigation extends React.Component<INavigationProps, any> {
         super(props);
         this.toggleDrawer2 = this.toggleDrawer2.bind(this);
         this.handleScroll = this.handleScroll.bind(this);
+        this.onElementScroll= this.onElementScroll.bind(this);
         this.state= {
             bottom: false,
             left: false,
@@ -118,6 +125,9 @@ class Navigation extends React.Component<INavigationProps, any> {
     }
     public componentWillUnmount() {
         this.elementAppContent.removeEventListener("scroll", this.handleScroll);      
+    }
+    public onElementScroll() {
+        console.log("this element scrolled");      
     }
     public handleScroll() {       
         if (this.elementAppContent.scrollTop > 100) {
@@ -188,12 +198,11 @@ class Navigation extends React.Component<INavigationProps, any> {
                     <SwipeableDrawer
                         open={this.state.left}
                         onOpen={this.toggleDrawer('left', true)}
-                        onClose={this.toggleDrawer("left", false)}
-                    ><div tabIndex={0} role="button">
+                        onClose={this.toggleDrawer("left", false)}><div tabIndex={0} role="button">
                             <MenuListControl {...pprops} />
                         </div>
                     </SwipeableDrawer>
-                    <section className="app-content" id="appContentId"  >
+                    <section className="app-content" id="appContentId" onScroll={this.onElementScroll}>
                         <Switch>
                             <Route exact={true} path="/" component={AsyncHomePage} />
                             <Route path="/about" component={AsyncAboutPage} />
@@ -202,6 +211,7 @@ class Navigation extends React.Component<INavigationProps, any> {
                             <Route path="/contact" component={AsyncContactPage} />
                             <Route path="/media" component={AsyncMediaPage} />
                             <Route path="/temp" component={TempPage} />
+                            <Route component={NoMatch}/>
                         </Switch>                     
                     </section>
                 </main>
