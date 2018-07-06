@@ -30,6 +30,75 @@
 // import img_7_File_1  from '../../images/past/img_7_File_1.jpg';    
 
 
+export interface IVideoItem {
+  id:string;
+  name:string;
+}
+
+export const list : IVideoItem[] = [
+  {
+    id: "275181419",
+    name:"Quantum on the Bay"    
+  },
+  {
+    id: "275181402",
+    name:"One Miami Micro-site"    
+  },
+  {
+    id: "275181388",
+    name:"Skyline on Brickell"    
+  },
+  {
+    id: "275181454",
+    name:"Metropolis"    
+  },
+  {
+    id: "275181480",
+    name:"The Lucerne"    
+  },
+  {
+    id: "275181436",
+    name:"The Beach Club"    
+  },
+  {
+    id: "275181549",
+    name:"Alpha Vision Corporate Site"    
+  },
+  {
+    id: "275181511",
+    name:"Solaris"    
+  },
+  {
+    id: "275181565",
+    name:"Las Olas Beach Club"    
+  },
+  {
+    id: "275181531",
+    name:"Town & Country Homes"    
+  },
+  {
+    id: "275181589",
+    name:"Aquazul"    
+  },
+  {
+    id: "275181598",
+    name:"The Related Group of Florida"    
+  },
+  {
+    id: "275181499",
+    name:"Mediterranea"    
+  },
+  {
+    id: "275181469",
+    name:"The Slade"    
+  },
+]
+
+
+
+// "https://player.vimeo.com/video/275181419"
+
+
 // <img src={img_72_File_1} />    
 // <img src={img_77_File_1} />      
 // <img src={img_76_File_1} />    
