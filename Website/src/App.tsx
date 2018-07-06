@@ -20,15 +20,14 @@ export interface IAppState {
     onSubmit: any;
     parent: any;
     open: boolean
-
 }
 class App extends React.Component<WithStyles<'root'>, IAppState> {
 
     constructor(props: any, state: IAppState) {
         super(props);
         this.handleClose = this.handleClose.bind(this);
-        this.handleClick = this.handleClick.bind(this);             
-       // history={hashHistory}
+        this.handleClick = this.handleClick.bind(this);            
+       
     }
     public handleClose() {
         this.setState({

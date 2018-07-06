@@ -384,15 +384,15 @@ export const ImageRow6Control = (classes: any) => (
 // --------------------------------------------------------
 //#region [ ImageRow-7                                     ]
 
-export const ImageRow7Control = (classes: any) => (
-    <React.Fragment>
-        <article className={classes.root}>
-            <Grid container={true} spacing={24} style={{maxWidth:950}}    >
+// export const ImageRow7Control = (classes: any) => (
+//     <React.Fragment>
+//         <article className={classes.root}>
+//             <Grid container={true} spacing={24} style={{maxWidth:950}}   / >
                
-       Yes
-            </Grid> 
-        </article>
-    </React.Fragment>); 
+       
+//             </Grid> 
+//         </article>
+//     </React.Fragment>); 
 
  //#endregion
 // --------------------------------------------------------
@@ -403,7 +403,7 @@ export const ImageRow7Control = (classes: any) => (
       },
     paper: {
         color: '#fffff',
-        paddinG:5,
+        padding:5,
         textAlign: 'center',
     },
     root: {
@@ -421,7 +421,7 @@ export default class ItemGridControl extends React.Component {
                 {/* <ImageRow4Control classes={classes}/> */}
                 <ImageRow5Control classes={classes}/>
                 <ImageRow6Control classes={classes} />
-                <ImageRow7Control classes={classes}/>
+                {/* <ImageRow7Control classes={classes}/> */}
             </React.Fragment>);        
     }
 }

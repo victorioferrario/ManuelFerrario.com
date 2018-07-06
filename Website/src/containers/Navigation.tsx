@@ -23,7 +23,7 @@ import Fade from "@material-ui/core/Fade";
 import {
     IPropsMenuListControl,
     MenuListControl
-} from "../components/shared/routeData";
+} from "../components/shared/RouteData";
 
 import {
     AsyncAboutPage,
@@ -97,7 +97,7 @@ export const NoMatch = ()=> (
         <h4>Error</h4>
         <p>There was an error with the page you were trying to load.</p>
     </React.Fragment>
-)
+);
 class Navigation extends React.Component<INavigationProps, any> {
 
     public elementAppContent: any;
@@ -172,8 +172,7 @@ class Navigation extends React.Component<INavigationProps, any> {
                             className={classes.flex}
                         >
                             <span style={{ color: "#FFF" }}>m3</span>
-                        </Typography>
-                        {/*<Button color="inherit">Login</Button>*/}
+                        </Typography>                       
                         <span id="scrollCountLabel" />
                         &nbsp;
                      <IconGithub />                 
@@ -202,7 +201,7 @@ class Navigation extends React.Component<INavigationProps, any> {
                             <MenuListControl {...pprops} />
                         </div>
                     </SwipeableDrawer>
-                    <section className="app-content" id="appContentId" onScroll={this.onElementScroll}>
+                    <section className="app-content" id="appContentId">
                         <Switch>
                             <Route exact={true} path="/" component={AsyncHomePage} />
                             <Route path="/about" component={AsyncAboutPage} />

@@ -30,7 +30,7 @@ import { withStyles } from '@material-ui/core/styles';
 //#region [@ Links                     ] 
 
 
-export const MyLinkHomme = (props: any) => <NavLink to="/" {...props} />
+export const MyLinkHome = (props: any) => <NavLink to="/" {...props} />
 export const MyLink = (props: any) => <NavLink to="/about" {...props} />
 export const MyLink2 = (props: any) => <NavLink to="/resume" {...props} />
 export const MyLink3 = (props: any) => <NavLink to="/contact" {...props} />
@@ -76,7 +76,7 @@ export const styles = (theme: any) => ({
 export const MenuTopControl = (props:IPropsMenuControl) => (
     <React.Fragment>
         <List component="nav" style={{ paddingTop: 0, paddingBottom: 0 }} subheader={<ListSubheader component="div">Menu</ListSubheader>}>
-            <ListItem button={true} component={MyLinkHomme} onClick={props.onHandleClick}>
+            <ListItem button={true} component={MyLinkHome} onClick={props.onHandleClick}>
                 <ListItemIcon>
                     <Icon>inbox</Icon>
                 </ListItemIcon>
@@ -138,12 +138,12 @@ export class MenuListControl extends React.Component<IPropsMenuListControl, ISta
         this.state = {
             open_collapse: false
         }
-        this.hadleToggleClick = this.hadleToggleClick.bind(this);
+        this.handleToggleClick = this.handleToggleClick.bind(this);
     }
     public handleClick = () => {
         this.setState({ open_collapse: !this.state.open_collapse });
     };
-    public hadleToggleClick() {
+    public handleToggleClick() {
 
         // this.context.
         this.props.onHandleClick("left", false);
@@ -170,13 +170,13 @@ export class MenuListControl extends React.Component<IPropsMenuListControl, ISta
                     <Divider />
                     <List component="div" disablePadding={true} >
                         <ListItem button={true} component={MediaWork}
-                            className="nested-list-item" onClick={this.hadleToggleClick}>
+                            className="nested-list-item" onClick={this.handleToggleClick}>
                             <ListItemIcon>
                                 <Icon>local_library</Icon>
                             </ListItemIcon>
                             <ListItemText secondary="Portfolio" />
                         </ListItem >
-                        <ListItem button={true} component={MediaEnterpriseDocs} className="nested-list-item" onClick={this.hadleToggleClick}>
+                        <ListItem button={true} component={MediaEnterpriseDocs} className="nested-list-item" onClick={this.handleToggleClick}>
                             <ListItemIcon>
                                 <Icon>shuffle</Icon>
                             </ListItemIcon>
@@ -184,21 +184,21 @@ export class MenuListControl extends React.Component<IPropsMenuListControl, ISta
                         </ListItem>
                         <ListItem button={true}
                             component={MediaSitemaps} className="nested-list-item"
-                            onClick={this.hadleToggleClick}>
+                            onClick={this.handleToggleClick}>
                             <ListItemIcon>
                                 <Icon>transform</Icon>
                             </ListItemIcon>
                             <ListItemText inset={true} secondary="Sitemaps" />
                         </ListItem>
-                        <ListItem button={true} component={MediaUIUX} className="nested-list-item" onClick={this.hadleToggleClick}>
+                        <ListItem button={true} component={MediaUIUX} className="nested-list-item" onClick={this.handleToggleClick}>
                             <ListItemIcon>
                                 <Icon>important_devices</Icon>
                             </ListItemIcon>
-                            <ListItemText inset={true} secondary="Video" />
+                            <ListItemText inset={true} secondary="Video Demos" />
                         </ListItem>
-                        <ListItem button={true} component={MediaWireframes} className="nested-list-item" onClick={this.hadleToggleClick}>
+                        <ListItem button={true} component={MediaWireframes} className="nested-list-item" onClick={this.handleToggleClick}>
                             <ListItemIcon>
-                                <Icon>important_devices</Icon>
+                                <Icon>device_hub</Icon>
                             </ListItemIcon>
                             <ListItemText inset={true} secondary="Wireframes" />
                         </ListItem>
@@ -208,7 +208,7 @@ export class MenuListControl extends React.Component<IPropsMenuListControl, ISta
     }
     public render() {
         const props ={
-            onHandleClick : this.hadleToggleClick
+            onHandleClick : this.handleToggleClick
         }
         return (
             <React.Fragment>

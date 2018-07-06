@@ -35,7 +35,7 @@ import project0M from "../../images/projects/project-m.jpg";
 import projectCD from "../../images/projects/project-cd.jpg";
 
 
-import ItemGridControl from './ItemGrid';
+import ItemGridControl from './itemGrid';
 
 import Grid from "@material-ui/core/Grid";
 
@@ -46,7 +46,7 @@ export const styles = (theme: any) => ({
     },
     paper: {
         color: '#fffff',
-        paddinG: 5,
+        padding: 5,
         textAlign: 'center',
     },
     root: {
